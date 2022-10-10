@@ -13,19 +13,20 @@ for(i = 1;i < 101;i++){
     const pp = document.createElement("p");
     if(i % 3 ==0 && i % 5==0){
         x="FizzBuzz"
-    console.log(x);
-   pp.style.color = "#ff7f50";
+        console.log(x);
+        pp.classList.add("orange")
     }else if(i % 3 ==0){
         x="Fizz"
         console.log(x);
-        pp.style.color = "#ff0000";
+        pp.classList.add("yellow")
     }else if(i % 5==0){
         x="Buzz"
         console.log(x);
-        pp.style.color="#ffff00";
+        pp.classList.add("red")
     }else{
         x=i
         console.log(i);
+        pp.classList.add("blue")
     }
     pp.append(x)
     container.append(pp);
