@@ -7,14 +7,23 @@
 // Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 // BONUS 1: Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.
 // BONUS 2: Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
+const container = document.querySelector("div.container");
+let x =""
 for(i = 1;i < 101;i++){
+    const pp = document.createElement("p");
     if(i % 3 ==0 && i % 5==0){
-    console.log("FizzBuzz")
+        x="FizzBuzz"
+    console.log(x);
     }else if(i % 3 ==0){
-        console.log("Fizz")
+        x="Fizz"
+        console.log(x);
     }else if(i % 5==0){
-        console.log("Buzz")
+        x="Buzz"
+        console.log(x);
     }else{
-        console.log(i)
+        x=i
+        console.log(i);
     }
+    pp.append(x)
+    container.append(pp);
 }
