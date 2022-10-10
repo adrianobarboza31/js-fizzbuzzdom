@@ -14,12 +14,15 @@ for(i = 1;i < 101;i++){
     if(i % 3 ==0 && i % 5==0){
         x="FizzBuzz"
     console.log(x);
+   pp.style.color = "#ff7f50";
     }else if(i % 3 ==0){
         x="Fizz"
         console.log(x);
+        pp.style.color = "#ff0000";
     }else if(i % 5==0){
         x="Buzz"
         console.log(x);
+        pp.style.color="#ffff00";
     }else{
         x=i
         console.log(i);
